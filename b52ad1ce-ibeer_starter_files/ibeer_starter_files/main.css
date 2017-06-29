@@ -11,6 +11,12 @@ COLORS:
 light tan: #eeebda
 
 */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body{
     font-family: 'Noto Serif', serif;
     line-height: 1.8;
@@ -34,6 +40,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     
 
     /*
@@ -71,10 +78,8 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
-    /*
-        TODO: 
-        - Use the script font: 'Dancing Script' fot this text
-    */
+    font-family: 'Dancing Script';
+
 }
 #main-navigation{
     background: #444;
@@ -88,9 +93,8 @@ img{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-around;
+    padding: 10px 35px;
+    font-weight: 800;
     /*
         TODO: 
         - Flexbox - Create general spacing between nav links
@@ -106,8 +110,8 @@ main{
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     position: relative;
-    top: -80px;
-    width: 450px;
+    top: -70px;
+    width: 600px;
 
 }
 aside{
@@ -116,7 +120,7 @@ aside{
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
     width: 200px;
     position: relative;
-    margin-top: -80px
+    top: -70px;
 
 }
 aside h3{
@@ -158,6 +162,10 @@ article img{
     
 }
 article footer p{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid;
+    color: gray;
     /*
         TODO: 
         - Style the article footer
@@ -167,6 +175,13 @@ article footer p{
 #site-footer{
     
     background: #333;
+    text-align: center;
+    color: white;
+    height: 70px;
+    line-height: 70px;
+
+
+
     /*
         TODO: 
         - Style the site footer
